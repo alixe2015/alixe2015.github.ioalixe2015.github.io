@@ -1,0 +1,6 @@
+{
+  "name": "具身回响 · 每日感受明信片",
+  "description": "在AI时代的效率与逻辑之外，重新觉醒人类的具身经验与真实感受。每日一张切片，正反明信片，扫码倾听原声心潮，留存整年的心情年鉴。",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

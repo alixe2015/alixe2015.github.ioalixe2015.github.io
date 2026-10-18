@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0c0d0e;
+    color: #e6e4df;
+    overflow-x: hidden;
+  }
+}
+
+.font-serif-sc {
+  font-family: 'Noto Serif SC', 'Songti SC', serif;
+}
+
+.font-display {
+  font-family: 'Cinzel', serif;
+}
+
+.font-mono-data {
+  font-family: 'Space Mono', monospace;
+}
+
+/* 3D Flip Card Utilities with Spring Physics */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-1200 {
+  perspective: 1200px;
+}
+
+.perspective-1600 {
+  perspective: 1600px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* 350g Artisan Cotton Paper Edge & Physical Depth */
+.card-depth-edge {
+  box-shadow: 
+    0 24px 60px -12px rgba(0, 0, 0, 0.65),
+    0 12px 24px -8px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.15),
+    inset 0 -1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+.spring-flip {
+  transition: transform 0.72s cubic-bezier(0.34, 1.2, 0.64, 1), box-shadow 0.5s ease;
+}
+
+.tilt-active {
+  transition: transform 0.12s cubic-bezier(0.2, 0, 0, 1);
+}
+
+
+/* Subtle organic grain and paper textures */
+.paper-warm {
+  background-color: #f7f4ed;
+  background-image: radial-gradient(#d6cfbe 0.75px, transparent 0.75px);
+  background-size: 16px 16px;
+}
+
+.paper-darkroom {
+  background-color: #141416;
+  background-image: radial-gradient(#26262b 0.75px, transparent 0.75px);
+  background-size: 16px 16px;
+}
+
+.paper-cool {
+  background-color: #f4f6f8;
+  background-image: radial-gradient(#cbd5e1 0.75px, transparent 0.75px);
+  background-size: 16px 16px;
+}
+
+.paper-sepia {
+  background-color: #f5eedc;
+  background-image: radial-gradient(#d8c4a0 0.75px, transparent 0.75px);
+  background-size: 16px 16px;
+}
+
+/* Postcard postmark circular stamp */
+.postmark-seal {
+  position: relative;
+  border: 1.5px dashed rgba(160, 140, 115, 0.6);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-12deg);
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(8px) rotate(-1.5deg);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 7s ease-in-out infinite;
+}
+
+.glass-card-glow {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+@keyframes breathe-aura {
+  0%, 100% {
+    box-shadow: inset 0 0 45px 5px rgba(230, 195, 130, 0.06);
+  }
+  50% {
+    box-shadow: inset 0 0 95px 25px rgba(230, 195, 130, 0.22);
+  }
+}
+
+@keyframes sound-bar-1 {
+  0%, 100% { height: 4px; }
+  50% { height: 14px; }
+}
+
+@keyframes sound-bar-2 {
+  0%, 100% { height: 14px; }
+  50% { height: 6px; }
+}
+
+@keyframes sound-bar-3 {
+  0%, 100% { height: 7px; }
+  50% { height: 12px; }
+}
+
+.animate-sound-bar-1 {
+  animation: sound-bar-1 0.8s ease-in-out infinite;
+}
+
+.animate-sound-bar-2 {
+  animation: sound-bar-2 0.9s ease-in-out infinite;
+}
+
+.animate-sound-bar-3 {
+  animation: sound-bar-3 0.7s ease-in-out infinite;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+
